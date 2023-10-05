@@ -1,0 +1,125 @@
+/*Selector universal: con el asterisco */
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+header {
+
+    background: linear-gradient(to bottom, rgb(115, 101, 150), rgb(197, 188, 218));
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    animation: libros-animacion 5s infinite alternate;
+    
+}
+
+header img {
+    font-size: 36px;
+    animation: libros-animacion 5s infinite alternate;
+    
+}
+
+@keyframes libros-animacion {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/*Este body lo añadio Egly para el font page*/
+body {
+    background-image: url('../img/font_page/libros_wall.jpg'); /* Agrega la imagen de fondo que desees */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container-texto{
+    display: inline-block;
+    margin: 1vw;
+}
+
+/*.container-librito{
+    display: inline-block;
+    transform: translateY(1vw);
+    width: 4vw;
+}*/
+
+.casita{
+    width: 1.5vw;
+}
+
+
+nav {
+    /*background-color: #444;*/
+    /*color: white;*/
+    background: linear-gradient(to bottom, rgb(115, 101, 150), rgb(197, 188, 218));
+    text-align: center;
+    padding: 10px;
+}
+
+nav > a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1.5vw;
+}
+
+/*hover*/
+nav > a:hover{
+    font-weight: bold;
+}
+
+.casita:hover{
+    transform: scale(1.1);
+}
+
+
+/*dentro del main*/
+section{
+    padding: 2vw;
+}
+
+/*AAAAA POR QUE NO ANDAAAA*/
+.container-s1{
+    display: flex; /*flex: comodo. indico ese display, el gap entre img, que si no entran en la pantalla, vayan abajo, y centrarlas*/
+    gap: 5vw; /*puedo distinguir entre row-gap y column-gap*/
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para hacer la página responsive */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    .contenido {
+        padding: 10px;
+    }
+}
+
+footer{
+    background: linear-gradient(to top, rgb(115, 101, 150), rgb(197, 188, 218)); /* por defecto, de arriba a abajo (to bottom) */
+    height: 15vh;
+    text-align: center;
+    border-radius: 0%;
+}
+
+.text-foot{
+    padding-top: 8vh;
+    font-size: 1vw;
+}
