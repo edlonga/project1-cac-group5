@@ -1,8 +1,13 @@
+/*Fonts LETRA*/
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+}
 body {
-    background-image: url('../img/font_page/libros_wall.jpg'); /* Agrega la imagen de fondo que desees */
+    background-image: url('../img/font_page/libros_wall.jpg'); /* Imagen de fondo*/
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -26,6 +31,8 @@ header img {
     animation: libros-animacion 5s infinite alternate;
     
 }
+
+/*Animacion transformacion*/
 
 @keyframes libros-animacion {
     0% {
@@ -52,7 +59,7 @@ nav a {
     font-size: 1.5vw;
 }
 
-/*hover*/
+/*Sombra para la seleccion de las secciones*/
 nav > a:hover{
     font-weight: bold;
 }
@@ -66,17 +73,6 @@ nav > a:hover{
     margin: 20px auto;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
-}
-
-.seccion-foros, .seccion-videos {
-    margin: 20px 0;
-}
-
-.seccion-foros img, .seccion-videos img {
-    max-width: 100%;
-    width: 5vw;
-    height: auto; /*view height a lo alto*/
-    /*border-radius: 0% 50% 0% 50%;*/
 }
 
 /* Estilos para hacer la página responsive */
@@ -94,7 +90,7 @@ nav > a:hover{
     }
 }
 
-/*Agregar diseño pie de pagina*/
+/*Diseño pie de pagina*/
 footer{
     /*background-color: rgba(0,0,0,0.8);*/
     background: linear-gradient(to top, rgb(115, 101, 150), rgb(197, 188, 218));
