@@ -144,6 +144,7 @@ section{
     gap: 5vw; /*puedo distinguir entre row-gap y column-gap*/
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 4vw;
 }
 
 .container-s2 > div {
@@ -210,14 +211,6 @@ section{
     background-color: rgba(255,255,255,0.3);
 }
 
-/* .container-s3-s4 p {
-    margin: 1vw 0vw 1vw 0vw;
-}
-
-.container-s4 h2 {
-    margin-bottom: 1vw;
-} */
-
 .container-s3-s4 h2, p, label, input, textarea {
     margin-bottom: 1vw;
 }
@@ -228,6 +221,21 @@ section{
 
 .Enviar {
     margin-left: 0vw!important; /*para sobreescribir al de arriba, sin usar id, por las dudas*/
+    box-shadow: 0 2px 2px rgba(0,0,0,0.12),0 2px 2px rgba(0,0,0,0.12),0 2px 2px rgba(0,0,0,0.12),0 2px 2px rgba(0,0,0,0.12),0 16px 16px rgba(0,0,0,0.12); /*creditos: https://www.cssscript.com/elegant-box-shadows/*/
+    transition: transform 0.1s;
+}
+
+.Enviar:hover {
+    transform: scale(1.02);
+}
+
+.Borrar {
+    box-shadow: 0 2px 2px rgba(0,0,0,0.12),0 2px 2px rgba(0,0,0,0.12),0 2px 2px rgba(0,0,0,0.12),0 2px 2px rgba(0,0,0,0.12),0 16px 16px rgba(0,0,0,0.12); /*creditos: https://www.cssscript.com/elegant-box-shadows/*/
+    transition: transform 0.1s;
+}
+
+.Borrar:hover {
+    transform: scale(1.02);
 }
 
 .container-s3-s4 input { /*No se por que no siguen automaticamente al fontsize del .container-s3-s4 */

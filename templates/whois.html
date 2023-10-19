@@ -60,7 +60,7 @@
             <div class="container-s3">
                 <h2>¡Sumate a nosotros!</h2>
                 <p>Completá el formulario y unite a nuestras sesiones literarias. ¡Te esperamos!</p>
-                <form action="">
+                <form id="formulario-sumate" onsubmit="return validarFormularioSumate()">
                     <div>
                         <label for="nombre">Nombre:</label>
                         <input type="text" name="nombre" id="nombre" placeholder="Ej: María">
@@ -79,18 +79,18 @@
                     </div>
                     <div>
                         <input type="submit" value="Enviar" class="Enviar">
-                        <input type="reset" value="Borrar">
+                        <input type="reset" value="Borrar" class="Borrar">
                     </div>
                 </form><br><br>
                 <p>Confirmá tu mail ingresando debajo el código que te fue enviado (puede tomar unos instantes). En caso de no recibir el mail, volvé a enviar el formulario o ponete en contacto con nosotros.</p>
-                <form action="">
+                <form id="formulario-contraseña" onsubmit="return validarFormularioContraseña()">
                     <div>
                         <label for="codigo">Código:</label>
                         <input type="text" name="codigo" id="codigo" placeholder="Ej: 1A2B3C">
                     </div>
                     <div>
                         <input type="submit" value="Enviar" class="Enviar">
-                        <input type="reset" value="Borrar">
+                        <input type="reset" value="Borrar" class="Borrar">
                     </div>
 
                 </form>
@@ -98,7 +98,7 @@
 
             <div class="container-s4">
                 <h2>Contacto</h2>
-                <form action="">
+                <form id="formulario-contacto" onsubmit="return validarFormularioContacto()">
                     <div class="container-mail">
                         <label for="mail_contacto">Mail:</label>
                         <input type="email" name="mail_contacto" id="mail_contacto" placeholder="Ej: rcarlos456@gmail.com">
@@ -109,7 +109,7 @@
                     </div>
                     <div>
                         <input type="submit" value="Enviar" class="Enviar">
-                        <input type="reset" value="Borrar">
+                        <input type="reset" value="Borrar" class="Borrar">
                     </div>
                 </form>
             </div>
@@ -125,5 +125,7 @@
             <a href="https://www.reddit.com" target="_blank"><img src="../img/whois_img/reddit.png" alt="reddit"></a>
         </div>
     </footer>
+
+    <script src="../js/validacion.js"></script>
 </body>
 </html>
