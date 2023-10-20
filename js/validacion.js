@@ -35,14 +35,37 @@ function validarFormularioSumate() {
     }
 
     //Si supera las validaciones
-    alert("Formulario enviado con éxito!")
+    alert("Formulario enviado con éxito! Revise su correo para obtener la contraseña.")
     return true
 }
 
+/* //Aun no sabemos como enviar una contraseña al mail del usuario :c
 function validarFormularioContraseña() {
+    //Obtener los valores
+    var codigoIngresado = document.getElementById("codigo").value.trim()
 
+    //Verificar si la contraseña es correcta
+    if(codigoIngresado===codigoEnviado){
+        alert("Se ha registrado con éxito!")        
+        return true
+    }
+
+    return false
 }
+*/
 
 function validarFormularioContacto() {
+    //Obtener los valores
+    var mail_contacto = document.getElementById("mail_contacto").value.trim()
+    var comentario = document.getElementById("comentario").value.trim()
 
+    //Verificar si hay campos vacios
+    if(mail_contacto==="" || comentario===""){
+        alert("Complete todos los campos del formulario.")
+        return false
+    }
+
+    //Si supera las validaciones
+    alert("Consulta enviada con éxito!")
+    return true
 }

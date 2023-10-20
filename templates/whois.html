@@ -58,8 +58,8 @@
 
         <section class="container-s3-s4">
             <div class="container-s3">
-                <h2>¡Sumate a nosotros!</h2>
-                <p>Completá el formulario y unite a nuestras sesiones literarias. ¡Te esperamos!</p>
+                <h2>¡Sumate a nosotros!</h2><br>
+                <p>Completá el formulario y unite a nuestras sesiones literarias. ¡Te esperamos!</p><br>
                 <form id="formulario-sumate" onsubmit="return validarFormularioSumate()">
                     <div>
                         <label for="nombre">Nombre:</label>
@@ -81,19 +81,22 @@
                         <input type="submit" value="Enviar" class="Enviar">
                         <input type="reset" value="Borrar" class="Borrar">
                     </div>
-                </form><br><br>
+                </form>
+                
+                <!-- Aun no sabemos enviar un mail al usuario para validar su mail con la contraseña -->
+                <!-- <br><br>
                 <p>Confirmá tu mail ingresando debajo el código que te fue enviado (puede tomar unos instantes). En caso de no recibir el mail, volvé a enviar el formulario o ponete en contacto con nosotros.</p>
                 <form id="formulario-contraseña" onsubmit="return validarFormularioContraseña()">
                     <div>
                         <label for="codigo">Código:</label>
-                        <input type="text" name="codigo" id="codigo" placeholder="Ej: 1A2B3C">
+                        <input type="password" name="codigo" id="codigo" placeholder="Ej: 1A2B3C">
                     </div>
                     <div>
                         <input type="submit" value="Enviar" class="Enviar">
                         <input type="reset" value="Borrar" class="Borrar">
                     </div>
+                </form> -->
 
-                </form>
             </div>
 
             <div class="container-s4">
@@ -105,7 +108,7 @@
                     </div>
                     <div class="container-textarea">
                         <label for="comentario">Dejanos tu consulta o comentario:</label>
-                        <textarea name="comentario" id="comentario" rows="10" cols="25" placeholder="Quisiera saber..."></textarea>
+                        <textarea name="comentario" id="comentario" rows="8" cols="25" placeholder="Quisiera saber..."></textarea>
                     </div>
                     <div>
                         <input type="submit" value="Enviar" class="Enviar">

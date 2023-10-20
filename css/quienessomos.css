@@ -83,6 +83,8 @@ nav > a:hover{
     transform: scale(1.1);
 }
 
+
+
 /* ---------- Main ----------*/
 /* Para que el fixed header no me tape */
 main {
@@ -105,7 +107,6 @@ section{
     padding: 2vw;
     display: flex;
     align-items: center;
-    /* background-color: rgba(255,255,255,0.3); */
 }
 
 .container-h2 {
@@ -131,6 +132,7 @@ section{
     animation-iteration-count: infinite;
 }
 
+/*Animacion*/
 @keyframes cambiar {
     0%{background-image: url('../img/whois_img/gente_leyendo.jpg'); left: 0vw;top: 0vh;}
     33%{background-image: url('../img/whois_img/gente_leyendo_2.jpg');left: 0vw;top: 0vh;}
@@ -170,6 +172,7 @@ section{
     font-size: 2vw;
 }
 
+/*hover*/
 .container-s2 > div:hover p {
     opacity: 0;
     animation-name: aparecer;
@@ -178,6 +181,7 @@ section{
     
 }
 
+/*animacion*/
 @keyframes aparecer {
     0% {
       opacity: 0;
@@ -187,7 +191,7 @@ section{
     }
  }
 
- /* ----- Section 3 & 4 ----- */
+ /* ----- Sections 3 & 4 ----- */
 .container-s3-s4 {
     display: flex;
     justify-content: space-between;
@@ -201,6 +205,8 @@ section{
     padding: 2vw;
     align-items: center;
     background-color: rgba(255,255,255,0.3);
+    border-radius: 5%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15),0 2px 2px rgba(0,0,0,0.15),0 4px 4px rgba(0,0,0,0.15),0 8px 8px rgba(0,0,0,0.15); /*creditos: https://www.cssscript.com/elegant-box-shadows/*/
 }
 
 .container-s4 {
@@ -209,8 +215,11 @@ section{
     padding: 2vw;
     align-items: center;
     background-color: rgba(255,255,255,0.3);
+    border-radius: 5%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15),0 2px 2px rgba(0,0,0,0.15),0 4px 4px rgba(0,0,0,0.15),0 8px 8px rgba(0,0,0,0.15); /*creditos: https://www.cssscript.com/elegant-box-shadows/*/
 }
 
+/* Margenes */
 .container-s3-s4 h2, p, label, input, textarea {
     margin-bottom: 1vw;
 }
@@ -219,6 +228,7 @@ section{
     margin-left: 1vw;
 }
 
+/* Botones enviar y borrar */
 .Enviar {
     margin-left: 0vw!important; /*para sobreescribir al de arriba, sin usar id, por las dudas*/
     box-shadow: 0 2px 2px rgba(0,0,0,0.12),0 2px 2px rgba(0,0,0,0.12),0 2px 2px rgba(0,0,0,0.12),0 2px 2px rgba(0,0,0,0.12),0 16px 16px rgba(0,0,0,0.12); /*creditos: https://www.cssscript.com/elegant-box-shadows/*/
@@ -238,10 +248,12 @@ section{
     transform: scale(1.02);
 }
 
+/* Inputs */
 .container-s3-s4 input { /*No se por que no siguen automaticamente al fontsize del .container-s3-s4 */
     font-size: 1.5vw;
 }
 
+/* Textarea - comentario */
 .container-textarea {
     display: flex;
     flex-direction: column;
@@ -254,6 +266,7 @@ section{
     font-size: 1.5vw;
   }
 
+  /* Mail */
   .container-mail { /*para agrandar el tamaño de los inputs para mail*/
     display: flex;
   }
@@ -266,20 +279,7 @@ section{
     width: 100%;
   }
 
-/* Estilos para hacer la página responsive */
-/* @media screen and (max-width: 600px) {
-    header h1 {
-        font-size: 24px;
-    }
 
-    nav {
-        font-size: 14px;
-    }
-
-    .contenido {
-        padding: 10px;
-    }
-} */
 
 /* ---------- Footer ---------- */
 footer{
