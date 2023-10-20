@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/foro.css">
     <link rel="shortcut icon" href="../img/ico_book/libro.ico" type="image/x-icon">
     <title>FORO</title>
 </head>
@@ -18,46 +18,63 @@
     <nav>
         <a href="../index.html"><img class="casita" src="../img/whois_img/hogar.png" width="30vw" alt="Inicio"></a>
         <a href="whois.html">Quienes Somos</a>
-        <a href="novedades.html">Cartelera de Novedades</a>
+        <a href="cartelera.html">Cartelera de Novedades</a>
         <a href="foro.html">Foros</a>
     </nav>
 
     <div class="contenido">
         <section class="seccion-foros">
             <h2>Foros</h2>
-        <ul>
-            <li>
-            <a href="#">
-                <img src="../img/ico_writter/logotipo-escritor-clasico.png" alt="Escritores">Escritores
-            </a>
-            </li>
+            <ul>
+                <li>
+                    <div class="categoria"><a href="#">
+                        <img src="../img/ico_writter/logotipo-escritor-clasico.png" alt="Escritores">
+                        <p>Autores</p>
+                    </a>
+                    </div>
+                </li>
 
-            <li>
-            <a href="#">
-                <img src="../img/ico_mes/oct.png" alt="Tema del Mes">Tema del Mes
-            </a>
-            </li>
+                <li>
+                    <div class="categoria"><a href="#">
+                        <img src="../img/ico_mes/oct.png" alt="Tema del Mes">
+                        <p>Temas del Mes</p>
+                    </a>
+                    </div>
+                </li>
 
-            <li>
-            <a href="#">
-                <img src="../img/ico_inter/intercambio-1.png" alt="Intercambio de Libros">Intercambio de Libros
-            </a>
-            </li>
-        </ul>
+                <li>
+                    <div class="categoria"><a href="#">
+                        <img src="../img/ico_inter/intercambio-1.png" alt="Intercambio de Libros">
+                        <p>Intercambio de Libros</p>
+                    </a>
+                    </div>
+                </li>
+            </ul>
         </section>
+    </div>
+    
+    <div class="contenido">
         <section class="seccion-videos">
             <h2>Videos</h2>
         <ul>
             <li>
-                <a href="#">
+                <div class="video-sec"><a href="#">
+                    <div class="video-container">
                 <video src="../video/JK Rowling entrevista 60 minutos - Cree JKR en la magia.mp4" controls alt="Video 1">Entrevistas a autores</video>
+                <p>Entrevistas Autores</p>
                 </a>
+                    </div>
+            </div>
             </li>
 
             <li>
-                <a href="#">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_mPE-Gn9IzQ?si=XH2x_GTiXfBI-zyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>Reseñas de libros
-            </a>
+                <div class="video-sec"><a href="#">
+                    <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_mPE-Gn9IzQ?si=XH2x_GTiXfBI-zyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>Reseñas de libros</iframe>
+                    <p>Reseñas de libros</p>
+                        </a>
+                    </div>
+            </div>
             </li>
         </ul>
         </section>
@@ -66,11 +83,17 @@
     </main>
 
       <!-- Pie de pagina -->
-  <footer>
-    <div class="footer-container"></div>
-        <div class="footer-column">
-         <h4 class="text-foot">Club de Lectura Codo - Todos los Derechos Reservados Copyright © 2023</h4>
-  </footer>
+      <footer>
+        <div>
+            <h4>Club Bibliófilos Codo - Todos los Derechos Reservados Copyright © 2023</h4>
+            <p>Seguinos en nuestras redes</p>
+            <a href="http://www.instagram.com" target="_blank"><img src="../img/whois_img/instagram.png" alt="instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="../img/whois_img/twitter.png" alt="twitter"></a>
+            <a href="https://www.reddit.com" target="_blank"><img src="../img/whois_img/reddit.png" alt="reddit"></a>
+        </div>
+    </footer>
+
+    <script src="../js/validacion.js"></script>
 
 </body>
 </html>

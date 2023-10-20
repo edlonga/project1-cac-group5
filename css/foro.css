@@ -11,6 +11,7 @@
 }
 
 /* ---------- Body ---------- */
+
 body {
     background-image: url('../img/font_page/libros_wall.jpg'); /* Agrega la imagen de fondo que desees */
     background-repeat: repeat;
@@ -47,6 +48,8 @@ header img {
     
 }
 
+/*Animacion transformacion*/
+
 @keyframes libros-animacion {
     0% {
         transform: scale(1);
@@ -72,7 +75,7 @@ nav a {
     font-size: 1.5vw;
 }
 
-/*hover*/
+/*hover para la seleccion de las secciones*/
 nav > a:hover{
     font-weight: bold;
 }
@@ -88,6 +91,7 @@ nav > a:hover{
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+/*Contenido multimedia*/
 .seccion-foros, .seccion-videos {
     margin: 20px 0;
 }
@@ -114,7 +118,7 @@ nav > a:hover{
     }
 }
 
-/*Agregar diseño pie de pagina*/
+/*Diseño pie de pagina*/
 /* ---------- Footer ---------- */
 footer{
     background: linear-gradient(to top, rgb(115, 101, 150), rgb(197, 188, 218)); /* por defecto, de arriba a abajo (to bottom) */
@@ -133,4 +137,87 @@ footer > p {
 
 footer > div > a > img {
     height: 2vw;
+}
+
+/*Ediciones sesion Foro Egly*/
+.seccion-foros ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+.seccion-foros li {
+    flex-basis: calc(33.33% - 10px); /* 10px es un pequeño margen */
+    margin-right: 10px;
+}
+
+.seccion-foros li:last-child {
+    margin-right: 0;
+}
+
+.seccion-foros img {
+    max-width: 100%;
+    height: auto;
+}
+
+.seccion-foros video {
+    max-width: 100%;
+    height: auto;
+}
+
+/*maquetación con CSS Categorías del Foro */
+.categorias, .video-sec {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 2rem;
+gap: 1rem;
+}
+
+.categoria {
+flex: 1;
+max-width: 300px;
+background-color: var(--background-color);
+border: 1px solid var(--tranquil-blue);
+border-radius: 5px;
+padding: 1rem;
+text-align: center;
+transition: transform 0.3s;
+}
+
+.categoria:hover {
+transform: scale(1.05);
+}
+
+.categoria, .video-sec a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    }
+
+    
+.categoria a:hover {
+    color: var(--tranquil-blue);
+    }
+
+.seccion-videos ul {
+list-style-type: none;
+padding: 0;
+}
+
+.video-container {
+width: 560px; /* Tamaño específico */
+height: 315px; /* Tamaño específico */
+overflow: hidden; /* Esto es para asegurarnos de que el contenido no sobresalga */
+position: relative; /* Necesario para centrar el iframe dentro */
+}
+
+.video-container video, .video-container iframe {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+height: 100%;
 }
