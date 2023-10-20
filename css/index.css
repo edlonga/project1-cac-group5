@@ -27,24 +27,26 @@ body {
       }
 }
 
+/* ---------- Header ----------*/
 header {
-    /*background-color: #333;*/
-    /*color: white;*/
     background: linear-gradient(to bottom, rgb(115, 101, 150), rgb(197, 188, 218));
-    padding: 20px;
+    padding-top: 1vw;
     text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1; /*traer al frente*/
+}
+/* Titulo */
+.container-titulo {
+    animation: libros-animacion 5s infinite alternate;
 }
 
-header h1 {
-    font-size: 36px;
-    animation: libros-animacion 5s infinite alternate;
-    
+.container-titulo > h1 {
+    font-size: 2.5vw;
 }
 
-header img {
-    font-size: 36px;
-    animation: libros-animacion 5s infinite alternate;
-    
+.container-titulo > img {
+    width: 4vw;
 }
 
 @keyframes libros-animacion {
@@ -56,20 +58,24 @@ header img {
     }
 }
 
+/* Navbar */
 nav {
-    /*background-color: #444;*/
-    /*color: white;*/
     background: linear-gradient(to bottom, rgb(115, 101, 150), rgb(197, 188, 218));
     text-align: center;
-    padding: 10px;
+    vertical-align: middle;
+    padding: 0.5vw;
 }
 
-nav a {
-    /*color: white;*/
+.casita{
+    width: 2.5vw; /*quiza lo achique*/
+    vertical-align: -0.3vw;
+}
+
+nav > a {
     color: black;
     text-decoration: none;
-    margin: 10px;
-    font-size: 1.5vw;
+    margin: 2vw;
+    font-size: 2vw; /*quiza lo achique*/
 }
 
 /*hover*/
@@ -79,6 +85,11 @@ nav > a:hover{
 
 .casita:hover{
     transform: scale(1.1);
+}
+
+/* Para que el fixed header no me tape */
+main {
+    padding-top: 13vw;
 }
 
 .contenido {
@@ -97,6 +108,10 @@ nav > a:hover{
     width: 5vw;
     height: auto; /*view height a lo alto*/
     /*border-radius: 0% 50% 0% 50%;*/
+}
+
+.contenido > section{ /*para meter mas espacio*/
+    margin-bottom: 4vw;
 }
 
 /* Estilos para hacer la página responsive */
@@ -121,6 +136,9 @@ footer{
     padding: 1vw 0vw 1vw 0vw;
     text-align: center;
     border-radius: 0%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer > h4{

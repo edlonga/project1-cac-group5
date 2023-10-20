@@ -2,7 +2,6 @@
 *{
     margin: 0%;
     padding: 0%;
-
 }
 
 /*Fonts LETRA*/
@@ -27,14 +26,17 @@ body{
         z-index: -1;
       }
 }
+
 /* ---------- Header ----------*/
 header {
     background: linear-gradient(to bottom, rgb(115, 101, 150), rgb(197, 188, 218));
     padding-top: 1vw;
     text-align: center;
     width: 100vw;
-
+    position: fixed;
+    z-index: 1; /*traer al frente*/
 }
+
 /* Titulo */
 .container-titulo {
     animation: libros-animacion 5s infinite alternate;
@@ -88,10 +90,8 @@ nav > a:hover{
 
 /* Para que el fixed header no me tape */
 main {
-    /* padding-top: 2vw;
-    padding-bottom: 8vw; */
-    margin-top: 2vw;
-    padding-bottom: 8vw;
+    padding-top: 13vw;
+    padding-bottom: 8vw; /*y para que los libros no pisen el footer*/
 }
 
 .titulo{
