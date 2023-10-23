@@ -11,7 +11,6 @@
 }
 
 /* ---------- Body ---------- */
-
 body {
     background-image: url('../img/font_page/libros_wall.jpg'); /* Agrega la imagen de fondo que desees */
     background-repeat: repeat;
@@ -28,27 +27,28 @@ body {
       }
 }
 
+/* ---------- Header ----------*/
 header {
-    /*background-color: #333;*/
-    /*color: white;*/
     background: linear-gradient(to bottom, rgb(115, 101, 150), rgb(197, 188, 218));
-    padding: 20px;
+    padding-top: 1vw;
     text-align: center;
+    width: 100vw;
+    position: fixed;
+    z-index: 1; /*traer al frente*/
 }
 
-header h1 {
-    font-size: 36px;
+/* Titulo */
+.container-titulo {
     animation: libros-animacion 5s infinite alternate;
-    
 }
 
-header img {
-    font-size: 36px;
-    animation: libros-animacion 5s infinite alternate;
-    
+.container-titulo > h1 {
+    font-size: 2.5vw;
 }
 
-/*Animacion transformacion*/
+.container-titulo > img {
+    width: 4vw;
+}
 
 @keyframes libros-animacion {
     0% {
@@ -59,29 +59,36 @@ header img {
     }
 }
 
+/* Navbar */
 nav {
-    /*background-color: #444;*/
-    /*color: white;*/
     background: linear-gradient(to bottom, rgb(115, 101, 150), rgb(197, 188, 218));
     text-align: center;
-    padding: 10px;
+    vertical-align: middle;
+    padding: 0.5vw;
 }
 
-nav a {
-    /*color: white;*/
+.casita{
+    width: 2.5vw; /*quiza lo achique*/
+    vertical-align: -0.3vw;
+}
+nav > a {
     color: black;
     text-decoration: none;
-    margin: 10px;
-    font-size: 1.5vw;
+    margin: 2vw;
+    font-size: 2vw; /*quiza lo achique*/
 }
-
-/*hover para la seleccion de las secciones*/
+/*hover*/
 nav > a:hover{
     font-weight: bold;
 }
 
 .casita:hover{
     transform: scale(1.1);
+}
+
+/* Para que el fixed header no me tape */
+main {
+    padding-top: 13vw;
 }
 
 .contenido {
@@ -104,7 +111,7 @@ nav > a:hover{
 }
 
 /* Estilos para hacer la página responsive */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     header h1 {
         font-size: 24px;
     }
@@ -116,7 +123,7 @@ nav > a:hover{
     .contenido {
         padding: 10px;
     }
-}
+} */
 
 /*Diseño pie de pagina*/
 /* ---------- Footer ---------- */
@@ -204,6 +211,11 @@ transform: scale(1.05);
 .seccion-videos ul {
 list-style-type: none;
 padding: 0;
+}
+
+.video-sec p {
+    margin-top: 1rem;  /* Espacio entre el video y el subtítulo */
+    text-align: center; /* Centrar el texto del subtítulo */
 }
 
 .video-container {
